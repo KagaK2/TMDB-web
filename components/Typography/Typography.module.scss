@@ -1,0 +1,47 @@
+@import '../../styles/typography.scss';
+@import '../../styles/breakpoints.scss';
+
+.heading {
+  @include heading-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include heading-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include heading-tablet
+  }
+
+}
+
+.subheading {
+  @include subheading-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include subheading-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include subheading-tablet
+  }
+}
+
+.title {
+  @include title-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include title-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include title-tablet
+  }
+}
+
+.caption {
+  @include caption
+}
+
+.body {
+  @include body-desktop;
+  @media screen and (max-width: $breakpoint-mobile) {
+    @include body-mobile
+  }
+  @media screen and (max-width: $breakpoint-tablet--landscape) {
+    @include body-tablet
+  }
+}

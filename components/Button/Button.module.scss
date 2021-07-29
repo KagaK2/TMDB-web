@@ -1,0 +1,130 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.filled {
+  color: $color-neutral-one;
+  background-color: $color-secondary;
+  &.primary {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-button-primary-hover;
+    }
+    &:active {
+      background-color: $color-button-primary-active;
+    }
+    &:disabled {
+      background-color: $color-button-primary-disabled;
+    }
+  }
+
+  &.secondary{
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: $color-button-secondary-hover;
+    }
+    &:active {
+      background-color: $color-button-secondary-active;
+    }
+    &:disabled {
+      background-color: $color-button-secondary-disabled;
+    }
+  }
+}
+
+.ghost {
+  color: $color-primary;
+  background-color: $color-neutral-one;
+  &.primary {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-button-primary-hover;
+      background-color: rgba($color-button-primary-hover, 0.1)
+    }
+    &:active {
+      color: $color-button-primary-active;
+      background-color: rgba($color-button-primary-active, 0.1)
+
+    }
+    &:disabled {
+      color: $color-button-primary-disabled;
+      background-color: rgba($color-button-primary-disabled, 0.1)
+
+    }
+  }
+
+  &.secondary{
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-button-secondary-hover;
+      background-color: rgba($color-button-secondary-hover, 0.1)
+
+    }
+    &:active {
+      color: $color-button-secondary-active;
+      background-color: rgba($color-button-secondary-active, 0.1)
+
+    }
+    &:disabled {
+      color: $color-button-secondary-disabled;
+      background-color: rgba($color-button-secondary-disabled, 0.1)
+    }
+  }
+}
+
+.outline {
+  color: $color-primary;
+  background-color: $color-neutral-one;
+  &.primary {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      color: $color-button-primary-hover;
+      border: 2px solid $color-button-primary-hover;
+      background-color: rgba($color-button-primary-hover, 0.1)
+    }
+    &:active {
+      color: $color-button-primary-active;
+      border: 2px solid $color-button-primary-active;
+      background-color: rgba($color-button-primary-active, 0.1)
+    }
+    &:disabled {
+      color: $color-button-primary-disabled;
+      border: 2px solid $color-button-primary-disabled;
+      background-color: rgba($color-button-primary-disabled, 0.1)
+    }
+  }
+
+  &.secondary{
+    color: $color-secondary;
+    border: 2px solid $color-secondary;
+
+    &:hover {
+      color: $color-button-secondary-hover;
+      border: 2px solid $color-button-secondary-hover;
+      background-color: rgba($color-button-secondary-hover, 0.1)
+    }
+    &:active {
+      color: $color-button-secondary-active;
+      border: 2px solid $color-button-secondary-active;
+      background-color: rgba($color-button-secondary-active, 0.1)
+    }
+    &:disabled {
+      color: $color-button-secondary-disabled;
+      border: 2px solid $color-button-secondary-disabled;
+      background-color: rgba($color-button-secondary-disabled, 0.1)
+    }
+  }
+}
